@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "simple-report-system"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Lohvyn <i.logvyn@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_report_system"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.35.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

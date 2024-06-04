@@ -1,15 +1,18 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
+	"name": "dev-reports",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"onCreateCommand": "bash .devcontainer/onCreate.sh",
+	"postCreateCommand": "bash .devcontainer/postCreate.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
-				"ms-python.autopep8"
+				"tamasfe.even-better-toml",
+				"ms-python.autopep8",
+				"ms-python.black-formatter"
 			]
 		}
 	}
